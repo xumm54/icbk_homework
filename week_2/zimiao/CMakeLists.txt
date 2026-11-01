@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(aim_open)
+find_package(OpenCV REQUIRED)
+add_executable(aim main.cpp)
+target_link_libraries(aim ${OpenCV_LIBS})
